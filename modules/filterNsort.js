@@ -1,6 +1,6 @@
 const filterBooks = (books, filter) => {
     if (filter === "favorites") return books.filter(book => book.getFavorite());
-    return books;
+    return [...books];
 };
 
 const sortBooks = (books, sort) => {
