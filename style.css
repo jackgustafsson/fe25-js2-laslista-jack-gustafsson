@@ -1,0 +1,12 @@
+.text{
+    color: green;
+    font-weight: bold;
+}
+
+.items{
+    margin-bottom: 1rem;
+}
+
+#filter, #sort{
+    margin-top: 1rem;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script type="module" src="./main.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form>
+    <input type="text" id="title" placeholder="Add title" required>
+    <input type="text" id="author" placeholder="Add author" required>
+    <button>Add book</button>
+  </form>
+
+  <div>
+    <select id="filter">
+      <option value="all">Alla böcker</option>
+      <option value="favorites">Endast favoriter</option>
+    </select>
+
+    <select id="sort">
+      <option value="added-asc">Tillagda: först till sist</option>
+      <option value="added-desc">Tillagda: sist till först</option>
+      <option value="title-asc">Titel: A till Ö</option>
+      <option value="title-desc">Titel: Ö till A</option>
+      <option value="author-asc">Författare: A till Ö</option>
+      <option value="author-desc">Författare: Ö till A</option>
+    </select>
+  </div>
+
+  <div id="booksContainer">
+    <h1>List of books</h1>
+    <ul id="list"></ul>
+  </div>
+</body>
+
+</html>
